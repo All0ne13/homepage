@@ -1,152 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Résumé</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
-    <main>
-      <div class="resume">
+    <header class="header">
         <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
-    
-            <div class="contact_info_container fh">
-              <div class="contact-info__block">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">Vladislav</a>
 
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
-                      </path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
-              </div>
-
-
-              
-            
-              <div class="contact-info__block contact-info__block--center">
-                <img class="contact-info__avatar" src="assets/bulka.png" alt="Avatar">
-              </div>
-    
-              <div class="contact-info__block"
-                <a href="https://ua.linkedin.com/company/binary-studio_241166" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                      </path>
-                    </svg>
-                  </div>
-                  <span>binary-studio</span>
-                </a>
-
-              </div>
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#!" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
             </div>
-          </div>
-        </div>
 
+            <!-- Header content -->
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading">Marchenko Vladislav<br> <span>Designer & Developer</span></h1>
+                    <p>I am a misanthrope, the champion of Ukraine in tennis, I am more than sure that I am a whole head taller than you, I live in Kharkov.</p>
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="./img/header/hero-mobile.png">
+                        <img src="./img/header/hero.png" alt="">
+                    </picture>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
         <div class="container">
-          <div class="resume__block">
-            <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
-                  </path>
-                </svg>
-              </div>
-              <p class="intro_text">Meow.
-                I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil, 
-                all I do is sleep and try to help out hoomans with their projects whenever 
-                they need me.
-              </p>
-            </div>
-          </div>
-        </div>
+            <div class="services-row">
 
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/01.svg" alt="UI/UX Design">
+                    <h3 class="service-card-title">UI/UX Design</h3>
+                    <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/02.svg" alt="UI/UX Design">
+                    <h3 class="service-card-title">Development</h3>
+                    <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/03.svg" alt="UI/UX Design">
+                    <h3 class="service-card-title">software testing</h3>
+                    <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
         <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">Sleep, eat, more sleep, meow, mrrr, purr, formidable top, lick ear,bite your nose,biting slippers,just begging for food. </p>
+            <div class="portfolio-title">
+                <h2 class="title-1">Portfolio</h2>
             </div>
-          </div>
-        </div>
 
+            <div class="project" data-aos="flip-up">
+                <img src="./img/portfolio/01.jpg" alt="Online fashion store" class="project-img">
+                <h3 class="project-title"><a href="#!">Online fashion store - Homepage</a></h3>
+            </div>
+
+            <div class="project" data-aos="flip-up">
+                <img src="./img/portfolio/02.jpg" alt="Reebok Store" class="project-img">
+                <h3 class="project-title"><a href="#!">Reebok Store - Concept</a></h3>
+            </div>
+
+            <div class="project" data-aos="flip-up">
+                <img src="./img/portfolio/03.jpg" alt="Braun Landing Page" class="project-img">
+                <h3 class="project-title"><a href="#!">Braun Landing Page - Concept</a></h3>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="contacts">
         <div class="container">
-            <div class="main-info fh">
-              <div class="experiences"></div>
-              <div class="additional-info fv"></div>
+            <div class="contacts-title">
+                <h2 class="title-1">Contacts</h2>
+            </div>
+            <div class="contacts-content" data-aos="fade-down">
+                <p>Want to know more or just chat?<br> You are welcome!</p>
+            </div>
+            <div class="contacts-button" data-aos="fade-down">
+                <a href="#!" class="btn">Send message</a>
+            </div>
+            <div class="contacts-social" data-aos="zoom-in">
+                <a href="#!"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="#!"><img src="./img/socials/Instargam.svg" alt="Instargam"></a>
+                <a href="#!"><img src="./img/socials/Behance.svg" alt="Behance"></a>
+                <a href="#!"><img src="./img/socials/Dribble.svg" alt="Dribble"></a>
+            </div>
+            <div class="contacts-footer" data-aos="fade-up">
+                <p>Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
             </div>
         </div>
+    </footer>
 
-      <div class="container">
-        <div class="resume__block">
-        <div class="experiences">
-          <h3 class="experiences__header">Experience</h3>
-          <div class="experiences__company">
-            <div class="experiences__company-header">
-              <span class="experiences__company-header-durability">For whole my life</span>
-              <h3 class="experiences__company-header-name">BinaryStudio</h3>
-            </div>
-      </div>
- 
-      <div class="resume__block">
-            <div class="experiences__company-project">
-              <span class="experiences__company-project-role">Binary Studio Cat</span>
-              <h3 class="experiences__company-project-name">Hooman project</h3>
-              <ul class="experiences__company-project-responsibilities">
-                <li>Supported hoomans</li>
-                <li>Slept all the time</li>
-                <li>Lied on the keyboard</li>
-                <li>Watched my hoomans working</li>
-              </ul>
-            </div>
-        </div>
-          </div>
-        
-      </div>
-
-        <div class="resume__block">
-        <div class="additional-info fv">
-          <div class="additional-info__education">
-            <h3 class="additional-info__education-header">Education</h3>
-            <div class="additional-info__education-university">
-              <span class="additional-info__education-university-durability">2021</span>
-              <h3 class="additional-info__education-university-speciality">Cat track</h3>
-              <p class="additional-info__education-university-name">Binary Studio Academy</p>
-            </div>
-          </div>
-        </div>
-        </div>
-        
-        <div class="resume__block">
-          <div class="additional-info__languages">
-            <h3 class="additional-info__languages-header">Languages</h3>
-            <p class="additional-info__languages-item">
-              Meow dialect
-            </p>
-            <p class="additional-info__languages-item">
-              Ukrainian (understand)
-            </p>
-            <p class="additional-info__languages-item">
-              English (don't understand)
-            </p>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </main>
-
-  </body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>+
